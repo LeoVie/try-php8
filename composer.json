@@ -9,15 +9,18 @@
     ],
     "autoload": {
         "psr-4": {
-            "LeoVie\\TryPHP8\\": "src"
+            "LeoVie\\TryPHP8\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LeoVie\\TryPHP8\\Test\\": "tests"
+            "LeoVie\\TryPHP8\\Tests\\": "tests/"
         }
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "optimize-autoloader": true
     }
 }
