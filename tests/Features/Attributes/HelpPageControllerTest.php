@@ -2,7 +2,6 @@
 
 namespace LeoVie\TryPHP8\Tests\Features\Attributes;
 
-use JetBrains\PhpStorm\Pure;
 use LeoVie\TryPHP8\Features\Attributes\Attributes\Cacheable;
 use LeoVie\TryPHP8\Features\Attributes\Attributes\Route;
 use LeoVie\TryPHP8\Features\Attributes\HelpPageController;
@@ -25,11 +24,5 @@ class HelpPageControllerTest extends TestCase
         $route = $reflector->getAttributes(Route::class)[0]->newInstance();
 
         self::assertSame('/help', $route->getUrl());
-    }
-
-    #[Pure]
-    protected function foo(): void
-    {
-        $helpPageController = new HelpPageController();
     }
 }
